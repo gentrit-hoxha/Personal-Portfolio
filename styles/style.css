@@ -144,7 +144,7 @@ a:hover {
     
 }
 
-.about-me-part , .my-skills-content, .education-content, .projects-content{
+.about-me-part , .my-skills-content, .education-content, .projects-content, .get-in-touch-content{
 
     max-width: 1150px;
     margin-left: auto;
@@ -157,7 +157,7 @@ a:hover {
     padding: 4rem 0 2rem 2.3rem;
 }
 
-.about-me-part .abt-main::after  , .skill-heading::after , .education-heading::after, .projects-heading::after{
+.about-me-part .abt-main::after  , .skill-heading::after , .education-heading::after, .projects-heading::after, .get-in-touch-heading::after {
     margin-top: 0.5rem;
     content:' ';
     display:block;
@@ -250,7 +250,7 @@ label {
 }
 
 
-.my-skills-content .skill-heading, .education-heading, .projects-content {
+.my-skills-content .skill-heading, .education-heading, .projects-content, .get-in-touch-content {
     font-size: 45px;
     padding: 3rem 0 2rem 2.3rem;
 }
@@ -348,8 +348,8 @@ label {
 
 
 .projects{
-    background-color: #fff;
-    height: 55rem;
+    background-color: #F7F8F3;
+    max-height: 100rem !important;
  }
 
 
@@ -438,6 +438,7 @@ label {
 
 
   .card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       margin-top: 0.74rem !important;
   }
 
@@ -450,7 +451,72 @@ label {
       font-family: 'Poppins' , sans-serif;
   }
 
+  .get-in-touch {
+     
+      max-height: 75rem;
+  }
+
+ 
+
+  .get-in-touch-fl {
+      width: 50%;
+  }
 
 
+  .flexi {
+      margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .lefti {
+      width: 50%;
+  }
+ 
+
+  .get-in-touch-img {
+      max-width: 335px  !important;
+      height: auto;
+
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+
+  form label {
+      font-size: 14px !important;
+      width: 10rem;
+      margin-top: 0 !important;
+      padding-top: 0px !important;
+  }
+
+  .form-control {
+      border-radius: 0px !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      
+  }
+
+  .form-control:focus {
+      background-color: none !important;
+      color: none !important;
+      outline: none !important;
+  }
+
+  .submitbtn {
+      border: 1px solid gray !important;
+  }
+
+.submitbtn:hover {
+    background-color: #117a65 !important;
+    color: white !important;
+    
+    transition: 0.5s;
+    border-bottom: none;
+    border-bottom-style: none;
+}
  
 

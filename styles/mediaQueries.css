@@ -127,6 +127,18 @@
     transition: 0.5s;
 }
     
+
+.flexi {
+    flex-direction: column;
+}
+
+.lefti {
+    width: 85%;
+}
+
+.get-in-touch-img {
+    max-width: 200px !important;
+}
  
    
 

@@ -16,6 +16,7 @@
    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -133,6 +134,11 @@
                                   <label for="">Email:</label>
                                     <p>gentrit.hoxha2001@gmail.com</p>
                                   </div>
+
+                                  <div class="contact-details">
+                                    <label for="">Uni mail:</label>
+                                      <p style="width: 4.1rem;">gentrit.hoxha1@student.uni-pr.edu</p>
+                                    </div>
                                   
                         </div>
                         
@@ -462,27 +468,42 @@
           </div>
           
   </div>
-  
 
-<div class="container">
-  <form action="POST" data-netlify="true">
-    <div class="row">
-           <div class="col-sm">
-               <div class="form-group">
-                  <input type="text" name="name" placeholder="enter the NAME" class="form-control">
-               </div>
-           </div>
 
-           <div class="col-sm">
-             <div class="form-group">
-               <input type="text" name="surname" placeholder="Enter surname" class="form-control">
+
+  <div class="get-in-touch">
+    <div class="get-in-touch-content">
+      <h1 class="get-in-touch-heading">Contact Me</h1>
+         <div class="flexi">
+
+            <div class="lefti" >
+               <img src="./images/1.svg" alt="" class="get-in-touch-img">           
+              </div>
+             
+             <div class="lefti" >
+                      <form action="POST" data-netlify-recaptcha="true" data-netlify="true">
+                           <div class="form-group">
+                               
+                                 <input type="text" name="name" class="form-control mb-3 inputi" placeholder="Enter your Name" required>
+                                 
+                                 
+                                 <input type="email" name="email" class="form-control mb-3 inputi" placeholder="Enter your Email" required>
+                                 
+                                 <textarea name="message" id="" class="form-control inputi mb-2" required placeholder="Message" cols="30" rows="8"></textarea>
+
+                                 <input type="submit" value="SUBMIT" class="form-control btn submitbtn">
+                           </div>
+                      </form>
              </div>
-           </div>
-    </div>
+        </div>
 
-     <input type="submit" value="SUBMIT" class="form-control btn btn-primary mb-3">
-</form>
-</div>
+  
+     </div>
+  </div>
+
+
+
+
 
   <footer>
       <p>Gentrit Hoxha Copyright 2021/2022</p>
