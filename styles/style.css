@@ -1,0 +1,456 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+      
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 1.5rem 0.2rem;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+}
+   .logo {
+    font-family: 'Archivo Black', sans-serif !important;
+    font-size: 25px !important;
+   }
+
+ a {
+     text-decoration: none !important;
+ }
+
+ ul {
+     list-style-type: none;
+     display: flex;
+     align-items: center;
+}
+
+ul li {
+    margin-left: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+   
+}
+
+.entry-part{
+    height: 100vh;
+    background:  url("../images/cool-background\(3\).png") center center/cover no-repeat;
+    
+}
+
+.subcontent {
+   /* border: 2px solid black;*/
+    max-width: 750px;
+    text-align: center;
+}
+
+.subcontent h1 {
+    font-size: 75px;
+    font-weight: bolder;
+}
+ 
+
+.contenti { 
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black !important;
+    margin-right: 2rem;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+a:hover {
+    cursor: pointer;
+   
+}
+
+ .openBtn {
+     display: none;
+ }
+
+
+.fa-facebook:hover {
+    transform: scale(2);
+    transition: 0.45s;
+    color: blue;
+}
+
+.fa-github:hover {
+    transform: scale(2);
+    transition: 0.45s;
+    border-radius: 70%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+
+.mobile-menu {
+    background-color: rgba(0,0,0,0.93);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    transition: 0.3s;
+}
+
+.mobile-content ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-content ul li {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+}
+
+
+
+.closeBtn {
+    color: white !important;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 75px;
+}
+
+.about-me {
+    background-color: #eaedf2;
+    height: 45rem;
+    
+}
+
+.about-me-part , .my-skills-content, .education-content, .projects-content{
+
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-me-part .abt-main {
+    font-size: 45px;
+    padding: 4rem 0 2rem 2.3rem;
+}
+
+.about-me-part .abt-main::after  , .skill-heading::after , .education-heading::after, .projects-heading::after{
+    margin-top: 0.5rem;
+    content:' ';
+    display:block;
+    border:2px solid  #45b39d ;
+    width: 100px;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+
+.about-me-content{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.about-me-details{
+    padding: 0rem 0 1rem 3rem;
+}
+
+.user-img{
+    max-width: 450px;
+    border: 1rem solid white;
+    border-radius: 0.2rem;
+}
+
+label {
+    font-weight: bolder !important;
+    padding-right: 1.5rem;
+    width: 110px;
+
+}
+
+  .contact {
+      
+      margin-top: 2rem;
+      font-size: 15px;
+  }
+
+.contact-details {
+    padding-top: 1rem !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    height: 35px !important;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-right-part {
+    margin-left: 2rem;
+}
+
+
+.contact-right-part label {
+    width: 100px;
+}
+
+.download-cv {
+
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder !important;
+    background-color:  #117a65 ;
+    max-width: 400px;
+
+    margin-top: 1.5rem !important;
+    border-radius: 0 !important;
+}
+
+
+
+
+.download-cv a {
+    color: white !important;
+    font-size: 25px;
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.my-skills {
+    height: 37.5rem;
+}
+
+
+.my-skills-content .skill-heading, .education-heading, .projects-content {
+    font-size: 45px;
+    padding: 3rem 0 2rem 2.3rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.skills-left-part {
+    width: 47.5%;
+}
+
+.skills-right-part {
+    width: 47.5%;
+}
+
+.skill-item {
+    padding: 1rem;
+    
+}
+
+.skill-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-description p {
+    padding-top: 1rem;
+     font-size: 20px !important;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .progress {
+     height: 0.185rem !important;
+ }
+
+ .education{
+    background-color: #eaedf2;
+    height: 55rem;
+ }
+
+ .school-time {
+     margin-top: 0.5rem;
+     display: flex;
+     align-items: flex-start;
+     height: fit-content;
+     
+ }
+  .school-time p {
+      margin-left: 1rem;
+  }
+
+  .school-item {
+      margin-top: 1rem;
+      padding: 2rem 1rem;
+      background-color: white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      margin-left: 2rem;
+  }
+
+  .school-name {
+      font-size: 2rem;
+  }
+
+.school-faculty {
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+}
+
+.school-degree {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+}
+
+
+.school-time h5 {
+    margin-top: -2rem !important;
+}
+
+
+.add-info {
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+#download-cv-to-education-part{
+    margin-left: 4rem;
+}
+
+
+.projects{
+    background-color: #fff;
+    height: 55rem;
+ }
+
+
+ 
+
+
+
+
+
+
+ .tab {
+    overflow: hidden;
+    border: 0px solid #ccc;
+    margin-top: 2rem;
+  
+  }
+
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    margin-left: 1rem;
+    border-bottom: 1px solid black;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    cursor: pointer;
+    transform: translateY(-0.4rem);
+    transition: 0.25s;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    border: none;
+    background-color: #117a65;
+    color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    margin-top: 2rem;
+    border-top: none;
+  }
+
+  .tabcontent1 {
+      display: block;
+  }
+
+ .card-title {
+     font-size: 1.7rem;
+ }
+
+  .card-text{
+      font-size: 1rem;
+  }
+
+  .card-linkk {
+      font-size: 1rem;
+      color: black !important;
+      background-color: white;
+      border-radius: 0 !important;
+      padding: 0.5rem;
+      margin-top: -5rem !important;
+      border-bottom: 3px solid gray;
+      border-bottom-style: double !important;
+    }
+
+  .card-linkk:hover {
+      background-color: #117a65 !important;
+      color: white !important;
+      transform: translateY(-1rem);
+      transition: 0.5s;
+      border-bottom: none;
+      border-bottom-style: none;
+  }
+
+
+  .card {
+      margin-top: 0.74rem !important;
+  }
+
+  footer {
+      background-color: #117a65;
+      text-align: center;
+      color: white;
+      padding: 1rem;
+      font-size: 1.2rem;
+      font-family: 'Poppins' , sans-serif;
+  }
+
+
+
+ 
+

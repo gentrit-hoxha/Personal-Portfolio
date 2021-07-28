@@ -1,0 +1,133 @@
+@media (max-width: 850px) {
+    .subcontent {
+        padding: 0;
+        max-width: 250px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .openBtn {
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+
+    }
+
+    .logo {
+        font-size: 10px  !important;
+    }
+
+    .about-me-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .user-img{
+        max-width: 200px;
+        border: none;
+    }
+ 
+
+    .contact-right-part {
+        margin-left: 0rem;
+    }
+  
+
+    .about-me-details p {
+        font-size: 15px;
+    }
+
+  
+    
+    .abt-main::after {
+
+        content:' ';
+        display:block;
+        border:2px solid  #45b39d ;
+        width: 100px;
+        border-radius:4px;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+    
+
+    .about-me {
+        background-color: #eaedf2;
+        height: 75rem;
+        
+    }
+
+    .about-me-details{
+        padding-left: 1rem;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills-left-part, .skills-right-part {
+        width: 100% !important;
+    }
+
+    .skill-item {
+        margin-top: 1rem;
+    }
+
+   .my-skills {
+       height: 55rem;
+   }
+
+   .school-item {
+       
+       margin: 4px;
+   }
+
+   .education {
+       height: 64rem;
+   }
+
+   .add-info , .download-cv {
+       margin-left: 0 !important;
+       font-size: 10px !important;
+   }
+
+   #download-cv-to-education-part {
+       margin-left: auto;
+       margin-right: auto;
+       max-width: 350px;
+   } 
+
+   .cv-link {
+       font-size: 17px !important;
+       
+   }
+
+   .projects-content {
+       margin-left: 0;
+       padding-left: 0.5rem;
+   }
+
+   .card-linkk {
+       display: block !important;
+       margin-top: 1rem !important;
+       font-size: 1rem !important;
+       width: fit-content !important;
+   }
+
+   .card-linkk:hover {
+    background-color: #117a65 !important;
+    color: white !important;
+    transform: translateY(-1rem);
+    transition: 0.5s;
+}
+    
+ 
+   
+
+}
