@@ -117,3 +117,8 @@ let activePlayer = 0;
       player1.classList.remove('player--active');
     
     }
+
+    function printLine() {
+      console.log('This is a test that the console.log is working');
+      console.log('This is another line ');
+    }

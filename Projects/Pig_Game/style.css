@@ -169,3 +169,13 @@ main {
 .hidden {
     display: none;
 }
+
+.disabledButton {
+  background-color: black;
+}
+
+
+.winner--0,  .winner--1 {
+  font-size: 3.5rem;
+  color: white;
+}
