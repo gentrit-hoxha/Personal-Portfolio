@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing with some liitle things</title>
+</head>
+<body>
+    
+
+    <label for="name">Enter Your name</label> <br>
+    <input type="text" id="name" class="nameField">
+    
+    
+
+      <script>
+            var name2 = document.getElementById('name');
+
+             document.addEventListener('keypress', function (e) {
+                 console.log(e);
+               console.log(e.which);
+               console.log(e.key);
+             });
+
+      </script>
+     
+</body>
+</html>

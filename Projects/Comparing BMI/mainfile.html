@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    
+    <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Comparing BMI</title>
+
+</head>
+<body>
+    <div class="mainContent">
+        <h1>Comparig BMI </h1>
+
+        <div class="data-content">     
+            <div class="inputs">
+                <h1>Inputs</h1>
+
+                <div class="user-contents">
+                    <div class="mark">
+                           <h3 id="useriPare">Mark Miller</h3>
+                           
+                           <img src="images/user1.png" id="markImg" alt="">
+
+                           <div class="input-field" id="weightInput">
+                               <input id="markHeight" type="number" class="height in">
+                               <label for="markHeight">Enter your height in m</label>
+                            </div>
+                            
+                            <div class="input-field" id="weightInput">
+                            <input id="markWeight" type="number" class="weight in">
+                            <label for="markWeight">Enter your weight in kg</label>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="john">
+                        <h3 id="h333">John Doe</h3>
+                        
+                        <img src="images/user2.png" id="johnImg" alt="">
+                        
+                        <div class="input-field" id="weightInput">
+                             <input id="johnHeight" type="number" class="height in">
+                             <label for="johnHeight">Enter your height in m</label>
+                       </div>
+                       
+                       <div class="input-field" id="weightInput">
+                            <input id="johnWeight" type="number" class="weight in">
+                            <label for="johnWeight">Enter your weight in kg</label>
+                       </div>
+
+                    </div>
+
+
+                </div>
+
+                <button class="waves-effect waves-light btn" id="compareButton">COMPARE</button>
+                
+            </div>
+
+            <div class="results">
+                <h1>Results</h1>
+
+
+                <table>
+                    <thead>
+                      <tr>
+                          <th></th>
+                          <th>Mark Miller</th>
+                          <th>John Doe</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <th>Height in m</th>
+                        <td class="markHeightTable">Mark height table</td>
+                        <td class="johnHeightTable">John height table</td>
+                    </tr>
+                    <tr>
+                        <th>Weight in kg</th>
+                        <td class="markWeightTable">Mark weight table</td>
+                        <td class="johnWeightTable">John weight table</td>
+                      </tr>
+                      <tr>
+                          <th>BMI</th>
+                          <td class="markBmiTable">Mark BMII</td>
+                          <td class="johnBmiTable">John BMI</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="alert alert-dark markAlert" id="mark-alert" role="alert">
+                    Mark level of Obesity
+                  </div>
+                  <div class="alert alert-dark johnAlert" role="alert">
+                    John level of Obesity
+                  </div>
+                        
+
+                  <h4 class="compareResult">Which one has greater BMI ? </h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="bmi.js"></script>
+</body>
+</html>

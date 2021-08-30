@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid #222;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 60%;
+    margin: 1rem auto 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    table {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    #which, #keyCode, #key {
+        font-size: 20px !important;
+        letter-spacing: 0.1rem !important;
+    }
+  }
+
+  table th {
+      font-size: 30px;
+  }
+
+  table  td{
+       font-size: 20px;
+  }
+
+  #which, #keyCode, #key {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+  }
+
+
+   .description {
+       border: 0.5px solid #222;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 2rem;
+       width: 60%;
+   }
+
+   p {
+       padding: 1.5rem 0.5rem;
+       margin-left: 1rem;
+   }
+
+   h4 {
+       font-size: 25px;
+       font-weight: bold;
+       margin-left: 1rem;
+   }
+
+   #btn {
+       position: absolute;
+       top: 15px;
+       right: 15px;
+       width: 100px;
+   }
+
+
+
+  
+
+   .darkbg {
+    background-color: #222;
+    color: white;
+   }
