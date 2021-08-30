@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+    <style>
+        .contents {
+            display: flex;
+
+        }
+
+        .item {
+            border: thin solid black;
+            padding: 1rem;
+        }
+
+        .second {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+                .contents {
+                    flex-direction: column;
+                }
+
+                .item {
+                    margin-top: 0.5rem;
+                }
+
+                .first {
+                    display: none;
+                }
+
+                .second {
+                    display: block;
+                }
+
+
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="contents">
+        <div class="item">
+            <p class="first">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum odio aliquid sapiente fugiat architecto accusantium error magni exercitationem autem, ex dolorum, libero natus rem porro quibusdam hic maiores excepturi.
+            </p>
+
+            <p class="second">
+                This is content that is going to be displayed in specific media querie
+            </p>
+        </div>
+
+        <div class="item">
+            <p class="first">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum odio aliquid sapiente fugiat architecto accusantium error magni exercitationem autem, ex dolorum, libero natus rem porro quibusdam hic maiores excepturi.
+            </p>
+
+            <p class="second">
+                This is content that is going to be displayed in specific media querie
+            </p>
+        </div>
+       
+
+        <div class="item">
+            <p class="first">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum odio aliquid sapiente fugiat architecto accusantium error magni exercitationem autem, ex dolorum, libero natus rem porro quibusdam hic maiores excepturi.
+            </p>
+
+            <p class="second">
+                This is content that is going to be displayed in specific media querie
+            </p>
+        </div>
+    </div>
+
+    <script src="random.js"></script>
+</body>
+</html>
