@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEDS fatura</title>
+    <style>
+        #title{
+            text-align: center;
+        }
+
+        .main-form {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: 40% 40% 20%;
+            align-items: center;
+            grid-gap: 10px;
+        }
+
+        .prices {
+            max-width: 1200px;
+            margin:  0 auto;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            align-items: center;
+            
+            grid-gap: 1rem;
+        }
+
+
+       
+
+        #A1, #A2 {
+            font-size: 2rem;
+        }
+
+        button {
+            width: 80%;
+        }
+
+        label{
+            font-size: 1.4rem !important;
+        }
+
+        .price {
+            font-size: 3rem;
+        }
+
+
+        @media only screen and (max-width: 800px){
+
+            .main-form {
+                display: grid;
+                grid-template-columns: 100%;
+                margin: 2rem;
+            }
+
+            .prices {
+                display: grid;
+                grid-template-columns: 100%;
+                margin: 2rem;
+            }
+
+            button{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+        }
+    </style>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+    <h1 id="title">Fatura e rrymës</h1>
+    <h4 style="text-align: center;">Për qëllime të kalkulimit dhe krahasimit të faturave mujore</h4>
+
+    <div class="main-form">
+        <div class="input-field col s6">
+            <input id="A1" type="number"  class="validate">
+            <label for="A1">Konsumi mujor A1/R1</label>
+          </div>
+    
+          <div class="input-field col s6">
+            <input id="A2" type="number" class="validate">
+            <label for="A2">Konsumi mujor A2/R2</label>
+          </div>
+
+          <div>
+            <button class="waves-effect waves-light btn" onclick="llogarit()">Llogarit</button>
+          </div>
+    </div>
+
+
+
+  <div class="prices">
+    <div class="card ">
+        <div class="card-content ">
+          <span class="card-title">Totali i Vjeter</span>
+          <p class="price" id="vjeter">0 &euro;</p>
+        </div>
+      </div>
+
+      <div class="card ">
+        <div class="card-content ">
+          <span class="card-title">Totali i Ri</span>
+          <p class="price" id="re">0 &euro;</p>
+        </div>
+      </div>
+
+   
+       
+          <div class="card ">
+            <div class="card-content ">
+              <span class="card-title">Diferenca</span>
+              <p class="price" id="dif">0 &euro;</p>
+            </div>
+          </div>
+
+          <div class="card ">
+            <div class="card-content ">
+              <span class="card-title">Perqinjda e Rritjes</span>
+              <p class="price" id="pc">0</p>
+            </div>
+          </div>
+     
+
+  </div>
+
+      
+
+
+
+
+
+    <p style="text-align: center; margin-top: 2rem;">Ky kalkulator është punuar me tarifat e paraqitura nga ZRrE dhe nuk është në asnjë formë i autorizuar nga KEK, KEDS apo KESCO.</p>
+    <p style="text-align: center;">Vetëm për nevoja personale.<br> <strong>&copy; Gentrit Hoxha, shkurt 2022</strong></p>
+    <script>
+        function llogarit()
+        {
+            var A1 = parseInt(document.getElementById("A1").value);
+            var A2 = parseInt(document.getElementById("A2").value);
+            var total_vjeter=(((A1*0.0675)+(A2*0.0289)+1.74)*1.08).toFixed(2); 
+            document.getElementById("vjeter").innerText="€"+total_vjeter;
+            var limitiA1=800*A1/(A1+A2);
+            var limitiA2=800*A2/(A1+A2);
+            var total_re_A1,total_re_A2;
+            if (A1<=limitiA1) total_re_A1=A1*0.0675;
+                else total_re_A1=limitiA1*0.0675+((A1-limitiA1)*0.1252);
+            if (A2<=limitiA2) total_re_A2=A2*0.0289;
+                else total_re_A2=limitiA2*0.0289+((A2-limitiA2)*0.059);
+            var total_re=((total_re_A1+total_re_A2+1.74)*1.08).toFixed(2);
+            document.getElementById("re").innerText="€"+total_re;
+            document.getElementById("dif").innerText="€"+(total_re - total_vjeter).toFixed(2);
+            var pc = ((total_re/total_vjeter*100)-100).toFixed(2);
+            document.getElementById("pc").innerText=" "+pc+"%";
+
+         document.getElementById('A1').value = '';
+         document.getElementById('A2').value = '';
+
+            
+        }
+    </script>
+
+</body>
+</html>
